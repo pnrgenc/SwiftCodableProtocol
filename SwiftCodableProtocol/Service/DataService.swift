@@ -1,5 +1,5 @@
 //
-//  CurrencyService.swift
+//  DataService.swift
 //  SwiftCodableProtocol
 //
 //  Created by Pınar Genç on 3.05.2020.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct CurrencyService{
-    func downloadCurrency(url: URL, completion: @escaping(Model?) -> ()){
+struct DataService{
+    func downloadHeroes(url: URL, completion: @escaping(Model?) -> ()){
     
     URLSession.shared.dataTask(with: url) { (data, response, error) in
         if let error = error {
